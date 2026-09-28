@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/doc/" />
+  <Folder Name="/src/">
+    <Project Path="src/BlaisePascal.Domain/BlaisePascal.Domain.csproj" />
+    <Project Path="src/BlaisePascal.Main/BlaisePascal.Main.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="BlaisePascal.Test/BlaisePascal.Test.csproj" />
+  </Folder>
+</Solution>
