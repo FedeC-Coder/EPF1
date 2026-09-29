@@ -4,14 +4,27 @@
     {
         int speditionCost= 5;
 
-        Console.WriteLine("Inserisci il nome del cliente: ");
-        string clientName = Console.ReadLine();
+        string clientName = "";
+        do
+        {
+            Console.WriteLine("Inserisci il nome del cliente: ");
+            clientName = Console.ReadLine();
 
-        Console.WriteLine("\nInserisci il numero dei libri acquistati: ");
-        int booksToBuy= int.Parse(Console.ReadLine());
+        } while (clientName == "" || clientName.IsWhiteSpace());
 
-        Console.WriteLine("\nInserisci il costo per il singolo libro: ");
-        int bookCost = int.Parse(Console.ReadLine());
+        int booksToBuy;
+        do
+        {
+            Console.WriteLine("\nInserisci il numero dei libri acquistati: ");
+            booksToBuy = int.Parse(Console.ReadLine());
+        } while (booksToBuy < 0);
+
+        int bookCost;
+        do
+        {
+            Console.WriteLine("\nInserisci il costo per il singolo libro: ");
+            bookCost = int.Parse(Console.ReadLine());
+        } while (booksToBuy < 0);
 
         bool isStudent = false;
         string studentAnswer;
